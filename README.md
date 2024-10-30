@@ -19,16 +19,12 @@ KD Player is a powerful, feature-rich music player app designed to provide a sea
 
 Here are some screenshots of KD Player's interface:
 
-## Screenshots
-
-Here are some screenshots of KD Player's interface:
-
-<div align="center">
+<div>
   <img src="https://raw.githubusercontent.com/prisriorg/KD-Player/refs/heads/main/screenshort/1.webp" alt="Screenshot 1" width="250"/>
   <img src="https://raw.githubusercontent.com/prisriorg/KD-Player/refs/heads/main/screenshort/2.webp" alt="Screenshot 2" width="250"/>
-  <img src="https://raw.githubusercontent.com/prisriorg/KD-Player/refs/heads/main/screenshort/3.webp" alt="Screenshot 3" width="250"/>
-  <img src="https://raw.githubusercontent.com/prisriorg/KD-Player/refs/heads/main/screenshort/4.webp" alt="Screenshot 4" width="250"/>
 </div>
+<div> <img src="https://raw.githubusercontent.com/prisriorg/KD-Player/refs/heads/main/screenshort/3.webp" alt="Screenshot 3" width="250"/>
+  <img src="https://raw.githubusercontent.com/prisriorg/KD-Player/refs/heads/main/screenshort/4.webp" alt="Screenshot 4" width="250"/></div>
 
 ## Installation
 
