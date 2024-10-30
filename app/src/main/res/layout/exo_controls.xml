@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/exo_controller"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/app_video_volume_box"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <LinearLayout
+            android:layout_width="30dp"
+            android:layout_height="150dp"
+            android:background="#90000000"
+
+            android:gravity="center"
+            android:orientation="vertical">
+        <SeekBar
+            android:id="@+id/app_video_volume_seekbar"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:valueFrom="0"
+            android:max="200"
+            android:progressTint="#00C4FF"
+            android:rotation="270"
+            android:thumb="@null"
+            />
+        <TextView
+            android:id="@+id/app_video_volume"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10"
+            android:textSize="15sp"
+            android:textColor="@color/white"/>
+        <ImageView
+            android:id="@+id/app_video_volume_icon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:padding="5dp"
+            android:src="@drawable/sound"
+            app:tint="@color/white"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/app_video_brightness_box"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="30dp"
+            android:layout_height="150dp"
+            android:background="#90000000"
+
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <SeekBar
+                android:id="@+id/app_video_brightness_seekbar"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:valueFrom="0"
+                android:valueTo="100"
+                android:rotation="270"
+                android:progressTint="#00C4FF"
+                android:thumb="@null"/>
+
+            <TextView
+                android:id="@+id/app_video_brightness"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10"
+                android:textSize="15sp"
+                android:textColor="@color/white"/>
+
+            <ImageView
+                android:id="@+id/app_video_brightness_icon"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:padding="5dp"
+                android:src="@drawable/brightness"
+                app:tint="@color/white" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/app_video_zoom_box"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="#90000000"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:text="Zoom"
+            android:textColor="@android:color/white"
+            android:textSize="22dp" />
+
+        <TextView
+            android:id="@+id/app_video_zoom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="50%"
+            android:textColor="@android:color/white"
+            android:textSize="18dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/speed_box"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="#90000000"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:text="Speed"
+            android:textColor="@android:color/white"
+            android:textSize="22dp" />
+
+        <TextView
+            android:id="@+id/app_video_speed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2.0x"
+            android:textColor="@android:color/white"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/app_video_fastForward_box"
+        android:layout_width="wrap_content"
+        android:padding="5dp"
+        android:layout_height="80dp"
+        android:background="#90000000"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    <TextView
+            android:id="@+id/app_video_fastForward"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/operation_bg"
+            android:paddingTop="8dp"
+            android:text="50%"
+            android:textColor="@android:color/white"
+            android:textSize="16dp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="8dp">
+
+            <TextView
+                android:id="@+id/app_video_fastForward_target"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="50%"
+                android:textColor="@android:color/white"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:id="@+id/app_video_fastForward_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="50%"
+                android:textColor="#FFFFFF"
+                android:textSize="16dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:paddingTop="30px"
+        android:background="#32000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:src="@drawable/back"
+            android:id="@+id/app_video_finish"
+            app:tint="@color/white" />
+        <TextView
+            android:id="@+id/Name"
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent"
+            android:padding="10px"
+            android:textSize="20sp"
+            android:lines="1"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:id="@+id/Main_me"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:padding="2dp"
+            app:tint="@color/white"
+            android:src="@drawable/dot_menu"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/midBox"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4" >
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:padding="5sp"
+            android:src="@drawable/unlock"
+            android:background="@drawable/shape"
+            app:tint="@color/white"
+            android:id="@+id/loack"/>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/midBox2"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:layout_weight="3">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/rewind"
+                android:background="@drawable/shape"
+                android:layout_margin="10dp"
+                android:padding="5sp"
+                app:tint="@color/white"
+                android:id="@+id/rew"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/play_pause"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <LinearLayout
+                android:id="@+id/play_pause"
+                android:layout_width="60dp"
+                android:background="@drawable/shape"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/play"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/play"
+                    app:tint="@color/white"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/pause"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    app:tint="@color/white"
+                    android:src="@drawable/pause" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/ffwd"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:padding="5sp"
+                app:tint="@color/white"
+                android:background="@drawable/shape"
+                android:src="@drawable/forword"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/play_pause" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <LinearLayout
+            android:id="@+id/midBox3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:id="@+id/replay"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:padding="5sp"
+                    android:background="@drawable/shape"
+                    app:tint="@color/white"
+                    android:src="@drawable/replay"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:paddingBottom="20dp"
+        android:background="#32000000"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" >
+
+        <SeekBar
+            android:id="@+id/app_video_seekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:progressTint="#00C4FF"
+            android:thumbTint="#00C4FF"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:id="@+id/play_pause1"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/play1"
+                    android:layout_width="25dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/play"
+                    app:tint="@color/white"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/pause1"
+                    android:layout_width="25dp"
+                    android:layout_height="match_parent"
+                    app:tint="@color/white"
+                    android:src="@drawable/pause" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+                <TextView
+                    android:text="@string/_06_21"
+                    android:id="@+id/app_video_currentTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/app_video_play"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp"
+                    />
+                <TextView
+                    android:text="/ "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/app_video_play"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp"
+                    />
+                <TextView
+                    android:id="@+id/app_video_endTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/app_video_fullscreen"
+                    android:text="@string/_10_10"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp"
+                    />
+            </LinearLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingRight="15dp">
+
+                <ImageView
+                    android:id="@+id/SetSpeed"
+                    android:layout_width="30dp"
+                    android:layout_height="50dp"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/speed"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/app_video_fullscreen"
+                    app:tint="@color/white" />
+                <ImageView
+                    android:id="@+id/app_video_fullscreen"
+                    android:layout_width="30dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="10dp"
+                    android:src="@drawable/screen"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:tint="@color/white" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <!-- status-->
+    <LinearLayout
+        android:id="@+id/app_video_status"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/app_video_status_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mip"
+            android:textColor="@android:color/white"
+            android:textSize="14dp"/>
+    </LinearLayout>
+
+    <!-- loading-->
+
+
+
+
+    <LinearLayout
+        android:id="@+id/app_video_loading"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="#90000000"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <ProgressBar
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:indeterminateBehavior="repeat"
+            android:indeterminateOnly="true"
+            android:visibility="visible"
+            android:layout_gravity="center"
+            android:progressTint="#00C4FF"
+            android:outlineSpotShadowColor="@color/black"
+            android:outlineAmbientShadowColor="@color/white" />
+
+<!--        <TextView-->
+<!--            android:id="@+id/loding_pr"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="0%"-->
+<!--            android:textColor="@android:color/white"-->
+<!--            android:textSize="18dp" />-->
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

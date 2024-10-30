@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">KD Player</string>
+    <string name="videos">Videos</string>
+    <string name="folders">Folders</string>
+    <string name="stream">Stream</string>
+    <string name="more">More</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search">Search</string>
+    <string name="download">Download</string>
+
+
+    <string name="TrackType_video">video</string>
+    <string name="TrackType_audio">audio</string>
+    <string name="TrackType_subtitle">subtitle</string>
+    <string name="TrackType_unknown">unknown</string>
+
+
+    <string name="TrackType_timedtext">Timed text</string>
+    <string name="TrackType_metadata">Meta data</string>
+    <string name="title_activity_exo_player">ExoPlayerActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+
+    <string name="themes">Themes</string>
+    <string name="settings">Settings</string>
+    <string name="rate_us">Rate Us</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="about">About</string>
+    <string name="exit">Exit</string>
+    <string name="join_telegram">Join us on Telegram</string>
+    <string name="_10_10">10:10</string>
+    <string name="_06_21">06:21</string>
+</resources>

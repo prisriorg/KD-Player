@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+   <item
+       android:id="@+id/allVideo"
+       android:title="@string/videos"
+       android:icon="@drawable/video"
+       app:showAsAction="ifRoom"
+       />
+   <item
+       android:id="@+id/allFolder"
+       android:title="@string/folders"
+       android:icon="@drawable/folders"
+       app:showAsAction="never"/>
+<!--   <item-->
+<!--       android:id="@+id/stream"-->
+<!--       android:title="@string/stream"-->
+<!--       android:icon="@drawable/online_100"-->
+<!--       app:showAsAction="never"/>-->
+   <item
+       android:id="@+id/more"
+       android:title="@string/more"
+       android:icon="@drawable/more"
+       app:showAsAction="never"/>
+
+</menu>
