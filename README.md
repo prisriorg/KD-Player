@@ -19,7 +19,7 @@ KD Player is a powerful, feature-rich music player app designed to provide a sea
 
 Here are some screenshots of KD Player's interface:
 
-![Home Screen](screenshot/1.webp)
+![Home Screen](https://raw.githubusercontent.com/prisriorg/KD-Player/refs/heads/main/screenshort/1.webp)
 ![Playlist Creation](screenshot/2.webp)
 ![Now Playing](screenshot/3.webp)
 ![Settings](screenshot/4.webp)
