@@ -2,7 +2,7 @@
 
 KD Player is a powerful, feature-rich music player app designed to provide a seamless music experience. With KD Player, users can easily organize, manage, and enjoy their music library with an intuitive interface and smooth playback.
 
-![KD Player Logo](link-to-your-logo-if-available)
+![KD Player Logo](https://raw.githubusercontent.com/prisriorg/KD-Player/refs/heads/main/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp)
 
 [Download on Google Play](https://play.google.com/store/apps/details?id=com.prisri.kdplayer)
 
